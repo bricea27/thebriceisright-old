@@ -56,6 +56,6 @@ app.use(function(err, req, res, next) {
   });
 });
 
-var server = app.listen(port);
+app.listen(port);
 
-module.exports = app;
+console.log(`Server listening on ${port}`);

@@ -1,9 +1,9 @@
 {
-  "name": "folio",
+  "name": "thebriceisright",
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "npm install && node app.js",
+    "start": "npm install && node app.js"
   },
   "dependencies": {
     "body-parser": "~1.13.2",
