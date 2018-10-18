@@ -1,0 +1,10 @@
+{
+    "name": "Folio",
+    "version": "1.0.0",
+    "dependencies": {
+        "font-awesome": "latest",
+        "animate.css": "latest",
+        "jquery": "latest",
+        "modernizr": "latest",
+    }
+}
