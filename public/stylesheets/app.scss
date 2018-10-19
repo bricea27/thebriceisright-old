@@ -316,7 +316,8 @@ ul {
   top: 0;
   left: 0;
   background: #222;
-  overflow-y: auto;
+  overflow-y: scroll;
+	-webkit-overflow-scrolling: touch;
   padding: 0;
   font-size: -webkit-calc(16px + 1.5vw);
 	font-size: -moz-calc(16px + 1.5vw);
@@ -326,7 +327,7 @@ ul {
   z-index: 99;
 
 	.about-me {
-		height: 100%;
+		min-height: 100%;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -586,9 +587,20 @@ ul {
 		width: 90%;
 	}
 	.bio {
-		font-size: -webkit-calc(16px + 1vw);
-		font-size: -moz-calc(16px + 1vw);
-		font-size: calc(16px + 1vw);
+		.about-me {
+			img {
+				max-width: 100px;
+			}
+			p {
+				font-size: -webkit-calc(16px + 0.5vw);
+				font-size: -moz-calc(16px + 0.5vw);
+				font-size: calc(16px + 0.5vw);
+			}
+
+			.fa-chevron-down {
+				display: none;
+			}
+		}
 	}
 }
 
