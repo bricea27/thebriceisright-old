@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><%= title %></title>
-    <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-96x96.png">
+    <link rel="icon" href="/images/favicon.ico">
     <link rel='stylesheet' href='/libs/animate.css/animate.min.css'>
     <link rel='stylesheet' href='/libs/font-awesome/css/font-awesome.min.css'>
     <link rel='stylesheet' href='/stylesheets/app.css'>
@@ -18,23 +18,67 @@
     <section class="inner-wrap">
       <div id="particles-js"></div>
       <header>
+        <svg class="animated fadeInUp" version="1.1" id="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 144 144" style="enable-background:new 0 0 144 144;" xml:space="preserve">
+        <g>
+        	<rect x="26.2" y="26.2" class="st0" width="91.6" height="13.1"/>
+        	<rect x="26.2" y="52.4" class="st0" width="39.3" height="13.1"/>
+        	<path class="st0" d="M136.8,0H0v144h136.8c4,0,7.2-3.2,7.2-7.2V85.7c0-4-3.2-7.2-7.2-7.2H26.2v13.1h104.7v39.3H13.1V13.1h117.8
+        		v39.3H78.6v13.1h58.2c4,0,7.2-3.2,7.2-7.2V7.2C144,3.2,140.8,0,136.8,0z"/>
+        	<rect x="26.2" y="104.7" class="st0" width="39.3" height="13.1"/>
+        	<rect x="78.5" y="104.7" class="st0" width="39.3" height="13.1"/>
+        </g>
+        </svg>
         <h1 class="animated fadeInLeft">Andrew Brice</h1>
         <h2 class="animated fadeInRight"><span data-hover="Designer">UX Developer</span></h2>
       </header>
-
       <ul class="animated fadeInUp">
-          <li><a href="https://www.linkedin.com/in/briceandrew" data-hover="Resumé"><i class="fa fa-linkedin-square"></i></a></li>
-          <li><a href="https://github.com/bricea27" data-hover="Code"><i class="fa fa-github-square"></i></a></li>
-          <li><a href="https://www.behance.net/andrewbrice" data-hover="Design"><i class="fa fa-behance-square"></i></a></li>
+          <li><a target="_blank" href="https://www.linkedin.com/in/briceandrew" data-hover="Resumé"><i class="fa fa-linkedin-square"></i></a></li>
+          <li><a target="_blank" href="https://github.com/bricea27" data-hover="Code"><i class="fa fa-github-square"></i></a></li>
+          <li><a target="_blank" href="https://www.behance.net/andrewbrice" data-hover="Design"><i class="fa fa-behance-square"></i></a></li>
+          <li><a href="mailto:bricea27@gmail.com" data-hover="Contact"><i class="fa fa-envelope"></i></a></li>
+
       </ul>
     </section>
     <!-- <footer><a href="#" class="get-resume">View Resumé</a></footer> -->
 
     <section class="bio" style="display:none;">
-      <p>
+      <div class="about-me">
         <img src="/images/headshot.png"/>
-        Hi there, I'm <a href="https://www.linkedin.com/in/briceandrew">Andrew Brice</a>. I'm a UX Developer with a background in Graphic Design, currently building dynamic user interfaces for the wonderful folks at <a href="https://sharpencx.com">Sharpen</a>. When I'm not submerged in code, you'll likely find me hiking, playing basketball, or sitting by a campfire with a book and a bourbon.</p>
-      <a href="mailto:bricea27@gmail.com" class="get-in-touch"><span data-hover="I Don't Bite!"><i class="fa fa-envelope"></i>Let's Chat!</span></a>
+        <p>Hi there, I'm <a target="_blank" href="https://www.linkedin.com/in/briceandrew">Andrew Brice</a>. I'm a UX Developer with a background in Graphic Design, currently building dynamic user interfaces for the wonderful folks at <a target="_blank" href="https://sharpencx.com">Sharpen</a>. When I'm not submerged in code, you'll likely find me hiking, playing basketball, or sitting by a campfire with a book and a bourbon. Check out some of my side projects below!</p>
+        <i class="fa fa-chevron-down"></i>
+      </div>
+      <div class="projects">
+        <div class="project">
+          <div class="project-image"><img src="/images/super-showdown.png"></div>
+          <div class="description">
+            <h3>Super Showdown</h3>
+            <p>My first attempt at React, this app uses the <a target="_blank" href="https://superheroapi.com">Super Hero API</a> to pull two random characters, compare their stats, and declare a winner based on their total scores. The user can then shuffle the heroes to view the next matchup, while the winner stays on.</p>
+            <a target="_blank" href="https://super-showdown.herokuapp.com" class="project-link">View</a>
+          </div>
+        </div>
+        <div class="project">
+          <div class="project-image"><img src="/images/gradient-weather.png"></div>
+          <div class="description">
+            <h3>Gradient Weather</h3>
+            <p>My second foray into React, this minimal weather app uses the <a target="_blank" href="https://developers.google.com/places/web-service/intro">Google Places API</a> for location selection, the <a target="_blank" href="https://darksky.net/dev">Dark Sky API</a> to for weather data, and the <a target="_blank" href="http://www.icndb.com/api/">Internet Chuck Norris Database API</a> to display the current weather and a funny quote to the user. The background gradient is calculated using the high and low temperatures to determine the hue, and the cloud cover to determine the saturation.</p>
+            <a target="_blank" href="https://gradient-weather.herokuapp.com" class="project-link">View</a>
+          </div>
+        </div>
+        <div class="project">
+          <div class="project-image"><img src="/images/the-indecider.png"></div>
+          <div class="description">
+            <h3>The InDecider</h3>
+            <p>This webpage asks for a yes / no question, and then returns a funny gif response using the <a target="_blank" href="https://yesno.wtf/api">Yes No WTF API</a>.</p>
+            <a target="_blank" href="https://the-indecider.herokuapp.com/" class="project-link">View</a>
+          </div>
+        </div>
+
+        </div>
+      </div>
+      <!-- <div class="get-in-touch">
+        <p>Thanks for stopping by! Feel free to reach out if you'd ever like to talk code, movies, or bourbon.</p>
+        <a href="mailto:bricea27@gmail.com"><span data-hover="I Don't Bite!"><i class="fa fa-envelope"></i>Let's Chat!</span></a>
+      </div> -->
     </section>
 
     <script src="/javascripts/main.js"></script>
