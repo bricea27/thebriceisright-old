@@ -353,6 +353,8 @@ ul {
 	    // top: 50%;
 	    // left: 50%;
 	    // transform: translate(-50%, -60%);
+			font-size: -webkit-calc(16px + 1vw);
+			font-size: -moz-calc(16px + 1vw);
 			font-size: calc(16px + 1vw);
 	    font-weight: 300;
 	    color: #ededed;
@@ -385,6 +387,8 @@ ul {
 
 				h3 {
 					text-transform: uppercase;
+					font-size: -webkit-calc(16px + 1vw);
+					font-size: -moz-calc(16px + 1vw);
 					font-size: calc(16px + 1vw);
 					font-weight: 700;
 					color: #666;
@@ -392,6 +396,8 @@ ul {
 
 				p {
 					color: rgba(0,0,0,0.5);
+					font-size: -webkit-calc(16px + 0.5vw);
+					font-size: -moz-calc(16px + 0.5vw);
 					font-size: calc(16px + 0.5vw);
 					margin-bottom: 1rem;
 
@@ -408,6 +414,8 @@ ul {
 					text-transform: uppercase;
 					background: rgba(0,0,0,0.1);
 					color: rgba(0,0,0,0.25);
+					font-size: -webkit-calc(16px + 0.5vw);
+					font-size: -moz-calc(16px + 0.5vw);
 					font-size: calc(16px + 0.5vw);
 					border-radius: 6px;
 					padding: 0.5rem 2rem;
@@ -583,8 +591,13 @@ ul {
 }
 
 @media only screen and (max-width : 480px) {
-	header {
-		width: 90%;
+	.inner-wrap {
+		header {
+			width: 90%;
+			#logo {
+				width: 80px;
+			}
+		}
 	}
 	.bio {
 		.about-me {
@@ -599,6 +612,17 @@ ul {
 
 			.fa-chevron-down {
 				display: none;
+			}
+		}
+
+		.projects {
+			.project {
+				padding: 4rem 3rem;
+				.description p {
+					font-size: -webkit-calc(16px + 0.25vw);
+					font-size: -moz-calc(16px + 0.25vw);
+					font-size: calc(16px + 0.25vw);
+				}
 			}
 		}
 	}

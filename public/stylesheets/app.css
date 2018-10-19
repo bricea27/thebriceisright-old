@@ -263,6 +263,8 @@ ul {
       width: 80%;
       max-width: 1200px;
       text-align: center;
+      font-size: -webkit-calc(16px + 1vw);
+      font-size: -moz-calc(16px + 1vw);
       font-size: calc(16px + 1vw);
       font-weight: 300;
       color: #ededed;
@@ -285,11 +287,15 @@ ul {
       text-align: left; }
       .bio .projects .project .description h3 {
         text-transform: uppercase;
+        font-size: -webkit-calc(16px + 1vw);
+        font-size: -moz-calc(16px + 1vw);
         font-size: calc(16px + 1vw);
         font-weight: 700;
         color: #666; }
       .bio .projects .project .description p {
         color: rgba(0, 0, 0, 0.5);
+        font-size: -webkit-calc(16px + 0.5vw);
+        font-size: -moz-calc(16px + 0.5vw);
         font-size: calc(16px + 0.5vw);
         margin-bottom: 1rem; }
         .bio .projects .project .description p a {
@@ -300,6 +306,8 @@ ul {
         text-transform: uppercase;
         background: rgba(0, 0, 0, 0.1);
         color: rgba(0, 0, 0, 0.25);
+        font-size: -webkit-calc(16px + 0.5vw);
+        font-size: -moz-calc(16px + 0.5vw);
         font-size: calc(16px + 0.5vw);
         border-radius: 6px;
         padding: 0.5rem 2rem;
@@ -414,8 +422,10 @@ ul {
     font-size: -moz-calc(16px + 2vw);
     font-size: calc(16px + 2vw); } }
 @media only screen and (max-width: 480px) {
-  header {
+  .inner-wrap header {
     width: 90%; }
+    .inner-wrap header #logo {
+      width: 80px; }
 
   .bio .about-me img {
     max-width: 100px; }
@@ -424,7 +434,13 @@ ul {
     font-size: -moz-calc(16px + 0.5vw);
     font-size: calc(16px + 0.5vw); }
   .bio .about-me .fa-chevron-down {
-    display: none; } }
+    display: none; }
+  .bio .projects .project {
+    padding: 4rem 3rem; }
+    .bio .projects .project .description p {
+      font-size: -webkit-calc(16px + 0.25vw);
+      font-size: -moz-calc(16px + 0.25vw);
+      font-size: calc(16px + 0.25vw); } }
 @-webkit-keyframes fadeInLeft {
   from {
     opacity: 0;
