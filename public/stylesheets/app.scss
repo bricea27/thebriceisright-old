@@ -47,8 +47,6 @@ table {
 	border-spacing: 0;
 }
 
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,300|Open+Sans+Condensed:300,700);
-
 @import url('https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900');
 
 html, body {
@@ -375,7 +373,11 @@ ul {
 			align-items: center;
 			justify-content: space-around;
 			border-top: 1px solid #ededed;
-			padding: 4rem;
+			padding: 6rem 4rem;
+
+			img {
+				border-radius: 6px;
+			}
 
 			&:nth-child(even) {
 				flex-direction: row-reverse;
@@ -554,6 +556,10 @@ ul {
 @media only screen and (max-width : 900px) {
 	.bio .projects .project, .bio .projects .project:nth-of-type(even) {
 		flex-direction: column;
+
+		img {
+			max-width: 200px;
+		}
 
 		.description {
 			width: 100%;

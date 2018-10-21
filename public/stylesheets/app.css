@@ -2,7 +2,6 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,300|Open+Sans+Condensed:300,700);
 @import url("https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -279,7 +278,9 @@ ul {
     align-items: center;
     justify-content: space-around;
     border-top: 1px solid #ededed;
-    padding: 4rem; }
+    padding: 6rem 4rem; }
+    .bio .projects .project img {
+      border-radius: 6px; }
     .bio .projects .project:nth-child(even) {
       flex-direction: row-reverse; }
     .bio .projects .project .description {
@@ -404,6 +405,8 @@ ul {
 @media only screen and (max-width: 900px) {
   .bio .projects .project, .bio .projects .project:nth-of-type(even) {
     flex-direction: column; }
+    .bio .projects .project img, .bio .projects .project:nth-of-type(even) img {
+      max-width: 200px; }
     .bio .projects .project .description, .bio .projects .project:nth-of-type(even) .description {
       width: 100%;
       text-align: center;
