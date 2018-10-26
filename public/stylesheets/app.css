@@ -316,6 +316,8 @@ ul {
         .bio .projects .project .description .project-link:hover {
           background: rgba(0, 0, 0, 0.2);
           transition: all 0.2s ease; }
+        .bio .projects .project .description .project-link .fa {
+          margin-right: 0.5rem; }
   .bio a {
     color: #ededed;
     text-decoration: none;
