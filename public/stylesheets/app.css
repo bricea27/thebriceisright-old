@@ -279,6 +279,11 @@ ul {
     justify-content: space-around;
     border-top: 1px solid #ededed;
     padding: 6rem 4rem; }
+    .bio .projects .project .project-image {
+      transition: all 0.2s ease; }
+      .bio .projects .project .project-image:hover {
+        opacity: 0.8;
+        transition: all 0.2s ease; }
     .bio .projects .project img {
       border-radius: 6px; }
     .bio .projects .project:nth-child(even) {

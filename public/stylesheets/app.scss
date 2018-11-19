@@ -375,6 +375,14 @@ ul {
 			border-top: 1px solid #ededed;
 			padding: 6rem 4rem;
 
+			.project-image {
+				transition: all 0.2s ease;
+				&:hover {
+					opacity: 0.8;
+					transition: all 0.2s ease;
+				}
+			}
+
 			img {
 				border-radius: 6px;
 			}
