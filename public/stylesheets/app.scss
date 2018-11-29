@@ -182,13 +182,14 @@ body {
     h2 {
       color: #666;
       font-weight: 700;
-			font-size: -webkit-calc(16px + 2vw);
-			font-size: -moz-calc(16px + 2vw);
-      font-size: calc(16px + 2vw);
+			font-size: -webkit-calc(16px + 1.25vw);
+			font-size: -moz-calc(16px + 1.25vw);
+      font-size: calc(16px + 1.25vw);
       overflow: hidden;
       position: relative;
       display: block;
-      line-height: 1.4em;
+			line-height: 1.4em;
+			text-transform: uppercase;
 
       span {
         position: relative;
