@@ -272,7 +272,8 @@ ul {
       transition: all 0.2s ease; }
     .bio .about-me .fa-chevron-down {
       position: absolute;
-      bottom: 2rem; }
+      bottom: 2rem;
+      color: rgba(255, 255, 255, 0.25); }
   .bio .projects .project {
     background: white;
     display: flex;
